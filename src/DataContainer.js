@@ -1,13 +1,19 @@
 import running from './images/running.png';
 import aerobics from './images/aerobics.png';
 import { GlobalContext } from './GlobalContext';
-import useFetch from './useFetch';
 import { useContext } from 'react';
 
 const DataContainer = () => {
-    const { url, setUrl, searchValue, setSearchValue } = useContext(GlobalContext);
+    const {
+        url,
+        setUrl,
+        searchValue,
+        setSearchValue,
+        myLocation,
+        aqi
+    } = useContext(GlobalContext);
 
-    const { myLocation, aqi } = useFetch(url);
+
 
     return (
         <div className="dataContainer">

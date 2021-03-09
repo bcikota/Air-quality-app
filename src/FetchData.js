@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
+import { GlobalContext } from "./GlobalContext";
 
-const useFetch = (url) => {
-  const [myLocation, setMyLocation] = useState('');
-  const [aqi, setAqi] = useState(null);
+const FetchData = () => {
+  const { url,
+    myLocation,
+    setMyLocation,
+    aqi,
+    setAqi } = useContext(GlobalContext);
 
   useEffect(() => {
     fetch(`https://api.waqi.info/${url}token=c0a9c351f889b4756f46957e26d8f31376df7e1f`)
@@ -23,7 +27,7 @@ const useFetch = (url) => {
       .catch(error => {
         console.log(error);
       });
-  }, [url]);
+  }, [url, setAqi, setMyLocation]);
 
   useEffect(() => {
     (aqi > 300) ?
@@ -43,4 +47,4 @@ const useFetch = (url) => {
   return { myLocation, aqi }
 }
 
-export default useFetch;
+export default FetchData;

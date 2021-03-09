@@ -2,12 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useContext } from "react";
 import './App.css';
 import { GlobalContext } from './GlobalContext';
-import useFetch from './useFetch';
 import DataContainer from './DataContainer';
+import FetchData from './FetchData';
 
 function App() {
-  const { url } = useContext(GlobalContext);
-  const { aqi } = useFetch(url);
+  const { aqi } = useContext(GlobalContext);
+  FetchData();
 
   return (
     <div className="App">
