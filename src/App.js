@@ -5,6 +5,7 @@ import { GlobalContext } from './GlobalContext';
 import DataContainer from './DataContainer';
 import FetchData from './FetchData';
 import ChangeBackground from './ChangeBackground';
+import SearchForm from './SearchForm';
 
 function App() {
   const { aqi } = useContext(GlobalContext);
@@ -17,6 +18,7 @@ function App() {
       {(aqi > 0) ?
         <DataContainer /> :
         <div>
+        <SearchForm />
           <p>No Data</p>
           <button onClick={() => {
             document.location.reload();
