@@ -4,10 +4,12 @@ import './App.css';
 import { GlobalContext } from './GlobalContext';
 import DataContainer from './DataContainer';
 import FetchData from './FetchData';
+import ChangeBackground from './ChangeBackground';
 
 function App() {
   const { aqi } = useContext(GlobalContext);
   FetchData();
+  ChangeBackground();
 
   return (
     <div className="App">
