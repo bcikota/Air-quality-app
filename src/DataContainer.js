@@ -2,32 +2,18 @@ import running from './images/running.png';
 import aerobics from './images/aerobics.png';
 import { GlobalContext } from './GlobalContext';
 import { useContext } from 'react';
+import SearchForm from './SearchForm';
 
 const DataContainer = () => {
     const {
         url,
-        setUrl,
-        searchValue,
-        setSearchValue,
         myLocation,
         aqi
     } = useContext(GlobalContext);
 
-
-
     return (
         <div className="dataContainer">
-            <form onSubmit={(e) => {
-                e.preventDefault();
-
-                setUrl(`search/?keyword=${searchValue}&`);
-                setSearchValue('');
-            }}>
-                <input type="text" placeholder="Search" value={searchValue} onChange={(e) => {
-                    setSearchValue(e.target.value);
-                }} />
-                <button>ok</button>
-            </form>
+            <SearchForm />
             {(url === 'feed/here/?') ? <p>Your location: </p> : <p>Location: </p>}
             <p>{myLocation}</p>
             <p>Air Quality Index: {aqi}</p>
