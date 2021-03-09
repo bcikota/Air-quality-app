@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      {aqi && <div className="dataContainer">
+      {(aqi > 0) ? <div className="dataContainer">
         <form onSubmit={(e) => {
           e.preventDefault();
 
@@ -91,17 +91,22 @@ function App() {
                       <p>Moderate</p>
                       <p>Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.</p>
                     </div> :
-                    (aqi > 0) ?
-                      <div>
-                        <p>Good</p>
-                        <img src={running} alt="running person" />
-                        <img src={aerobics} alt="aerobics" />
-                      </div> :
-                      <div>
-                        <p>No Data</p>
-                      </div>
+                    <div>
+                      <p>Good</p>
+                      <img src={running} alt="running person" />
+                      <img src={aerobics} alt="aerobics" />
+                    </div>
+
         }
-      </div>}
+      </div> :
+        <div>
+          <p>No Data</p>
+          <button onClick={()=>{
+            document.location.reload();
+          }}>Reload</button>
+        </div>
+
+      }
 
     </div>
   );
