@@ -1,7 +1,6 @@
 body {
     height: 100vh;
     text-align: center;
-    /* border: 5px solid rgba(255, 255, 255, 0.356); */
 }
 
 img {
@@ -12,10 +11,6 @@ img {
     max-width: 20rem;
     margin: 0 auto;
 }
-
-/* .location-name {
-    text-align: left;
-} */
 
 .location-name,
 .aqi {
@@ -50,11 +45,11 @@ form {
 }
 
 form img {
-    width: 100%;
+    width: 1.7rem;
 }
 
 form button {
-    width: 2.1rem;
+   
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
