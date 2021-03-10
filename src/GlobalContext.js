@@ -7,6 +7,7 @@ const GlobalContextProvider = (props) => {
     const [searchValue, setSearchValue] = useState('');
     const [myLocation, setMyLocation] = useState('');
     const [aqi, setAqi] = useState(null);
+    const [openSearch, setOpenSearch] =  useState(false);
     return (
         <GlobalContext.Provider
             value={{
@@ -17,7 +18,9 @@ const GlobalContextProvider = (props) => {
                 myLocation,
                 setMyLocation,
                 aqi,
-                setAqi
+                setAqi,
+                openSearch,
+                setOpenSearch
             }
             }>
             {props.children}

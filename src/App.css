@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    text-align: center;
+    /* border: 5px solid rgba(255, 255, 255, 0.356); */
+}
+
+img {
+    width: 100%;
+}
+
+.dataContainer {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+/* .location-name {
+    text-align: left;
+} */
+
+.location-name,
+.aqi {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    
+}
+
+.location,
+.status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 #5d5d5d, 1px 1px 2px #5d5d5d;
+}
+
+.dataContainer {
+    margin-top: 1rem;
+}
+
+.good .row {
+    padding-top: 1rem;
+}
+
+.open-search img {
+    width: 70%;
+}
+
+form {
+    margin: 1rem 0 1rem 0;
+}
+
+form img {
+    width: 100%;
+}
+
+form button {
+    width: 2.1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
