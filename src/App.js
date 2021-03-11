@@ -20,7 +20,7 @@ function App() {
         <div>
         <SearchForm />
           <p>No Data</p>
-          <button onClick={() => {
+          <button className="reload" onClick={() => {
             document.location.reload();
           }}>Reload</button>
         </div>

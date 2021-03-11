@@ -32,6 +32,10 @@ img {
     padding-top: 1rem;
 }
 
+.open-search {
+    cursor: pointer;
+}
+
 .open-search img {
     width: 70%;
 }
@@ -47,6 +51,19 @@ form img {
 form button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+form input {
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    color: rgb(73, 73, 73);
+}
+
+.reload {
+    border-radius: .5rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 
 @media only screen and (min-width: 600px) {
