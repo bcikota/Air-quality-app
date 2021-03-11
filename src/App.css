@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 97.8vh;
     text-align: center;
 }
 
@@ -10,6 +10,7 @@ img {
 .dataContainer {
     max-width: 20rem;
     margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .location-name,
@@ -17,7 +18,6 @@ img {
     margin-top: 1rem;
     font-weight: bold;
     color: rgb(73, 73, 73);
-    
 }
 
 .location,
@@ -26,10 +26,6 @@ img {
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 0 #5d5d5d, 1px 1px 2px #5d5d5d;
-}
-
-.dataContainer {
-    margin-top: 1rem;
 }
 
 .good .row {
@@ -49,7 +45,17 @@ form img {
 }
 
 form button {
-   
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .dataContainer {
+        border: 5px solid rgba(54, 54, 54, 0.568);
+        padding: .5rem;
+        border-radius: 1rem;
+        -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.445);
+        -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.445);
+        box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.445);
+    }
 }
