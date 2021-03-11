@@ -66,6 +66,10 @@ form input {
     padding: .5rem 1rem .5rem 1rem;
 }
 
+.time {
+    font-size: .8rem;
+}
+
 @media only screen and (min-width: 600px) {
     .dataContainer {
         border: 5px solid rgba(54, 54, 54, 0.568);
