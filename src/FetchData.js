@@ -23,7 +23,7 @@ const FetchData = () => {
         } else {
           setMyLocation(obj.data[0].station.name);
           setAqi(obj.data[0].aqi);
-          setTime(obj.data[0].s);
+          setTime(obj.data[0].time.stime);
         }
 
       })

@@ -35,7 +35,8 @@ const DataContainer = () => {
                 <p className="location">{myLocation}</p>
                 <p className="aqi">Air Quality Index: {aqi}</p>
 
-                <p className="time">{time.slice(0, time.length-3)}</p>
+                {time && <p className="time">{time.slice(0, time.length-3)}</p>}
+                
 
                 <HealthStatus />
 
