@@ -2,7 +2,7 @@
   "name": "air-quality-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bcikota.github.io/Air-quality-app",
+  "homepage": "https://BogdanCikota.github.io/Air-quality-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
